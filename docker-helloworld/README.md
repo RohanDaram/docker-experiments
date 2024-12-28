@@ -74,7 +74,7 @@ docker image ls
 ```
 Once you've obtained the image ID from the previous command, use the following docker run command to start the container:
 ```bash
-docker run container <image-id>
+docker container run <image-id>
 ```
 #### Alternate way to build the image and run the container (using the image name)
 Use the docker build command with the -t (short for --tag) flag to assign a name to the image:

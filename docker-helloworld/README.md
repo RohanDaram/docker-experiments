@@ -67,20 +67,28 @@ Ensure you're in the docker-helloworld directory, then run the following command
 ```bash
 docker build .
 ```
+<img width="1171" alt="building-image-wo-tag" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-helloworld/images/building-image-wo-tag.png" />
+
 Note: After building the image with the command above, you'll need to run it using its ID. To obtain the ID, run the following command:
 
 ```bash
 docker image ls
 ```
+<img width="782" alt="listing-images-on-host" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-helloworld/images/listing-images-on-host.png" />
+
 Once you've obtained the image ID from the previous command, use the following docker run command to start the container:
 ```bash
 docker container run <image-id>
 ```
+<img width="942" alt="running-container-with-image-id" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-helloworld/images/running-container-with-image-id.png" />
+
 #### Alternate way to build the image and run the container (using the image name)
 Use the docker build command with the -t (short for --tag) flag to assign a name to the image:
 ```bash
 docker build -t docker-helloworld .
 ```
+<img width="1203" alt="building-image-with-tag-option" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-helloworld/images/building-image-with-tag-option.png" />
+
 Note: Don’t leave out the trailing dot at the end of the build command — it's the little thing that makes everything work!
 
 ## Running the container
@@ -88,8 +96,10 @@ Note: Don’t leave out the trailing dot at the end of the build command — it'
 
 The following command will run the container, provided you've specified the image tag correctly:
 ```bash
-docker run docker-helloworld
+docker container run docker-helloworld
 ```
+<img width="966" alt="running-container-with-image-name" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-helloworld/images/running-container-with-image-name.png" />
+
 Assuming the Docker magic happens (and the Docker gods are smiling upon you), you should see something like this:
 ```bash
 Docker Hello World!

@@ -90,7 +90,7 @@ docker container run -v ./src/main/java:/app-source -it docker-java-container
 ```bash
 docker container run --mount type=bind,src=./src/main/java,dst=/app-source -it docker-java-container
 ```
-<img width="1430" alt="bind-mount-with-mount-option" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-java-container/images/bind-mount-with-v-option.png" />
+<img width="1430" alt="bind-mount-with-mount-option" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-java-container/images/bind-mount-with-mount-option.png" />
 
 - Method 3:  Mapping src/main/java on the host to /app-source in the container using ```--mount```, ```source```, and ```target``` flags.
 ```bash

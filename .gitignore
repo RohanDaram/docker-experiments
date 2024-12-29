@@ -6,7 +6,6 @@ docker-helloworld/target
 docker-helloworld/bin/
 docker-helloworld/.DS_Store
 
-
 docker-helloworld-using-java-class/.classpath
 docker-helloworld-using-java-class/.project
 docker-helloworld-using-java-class/.settings
@@ -14,3 +13,14 @@ docker-helloworld-using-java-class/target
 docker-helloworld-using-java-class/target/
 docker-helloworld-using-java-class/bin/
 docker-helloworld-using-java-class/.DS_Store
+
+docker-java-container/.classpath
+docker-java-container/.project
+docker-java-container/.settings
+docker-java-container/target
+docker-java-container/target/
+dodocker-java-container/bin/
+docker-java-container/.DS_Store
+
+# Ignore .class files in docker-java-container and its subfolders
+docker-java-container/**/*.class

@@ -95,6 +95,7 @@ Use the docker build command with the ```-t``` (short for ```--tag```) flag to a
 ```bash
 docker build -t docker-helloworld-using-java-class .
 ```
+<img width="1149" alt="building-image-with-tag-option" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-helloworld-using-java-class/images/building-image-with-tag-option.png" />
 
 Note: Don’t leave out the trailing dot at the end of the build command — it's the little thing that makes everything work!
 
@@ -104,6 +105,7 @@ The following command will run the container, provided you've specified the imag
 ```bash
 docker container run docker-helloworld-using-java-class
 ```
+<img width="1172" alt="running-container-with-image-name" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-helloworld-using-java-class/images/running-container-with-image-name.png" />
 
 Assuming the Docker magic happens (and the Docker gods are smiling upon you), you should see something like this:
 ```bash

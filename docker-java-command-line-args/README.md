@@ -66,6 +66,7 @@ Use the docker build command with the ```-t``` (short for ```--tag```) flag to a
 ```bash
 docker build -t docker-java-command-line-args .
 ```
+<img width="1432" alt="building-image-with-tag-option" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-java-command-line-args/images/building-image-with-tag-option.png" />
 
 Note: Don’t leave out the trailing dot at the end of the build command — it's the little thing that makes everything work!
 
@@ -76,7 +77,7 @@ If no arguments are provided, the default arguments specified in the ```CMD``` i
 ```bash
 docker container run commandline-args-calculator
 ```
-
+<img width="1301" alt="docker-run-without-arguments" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-java-command-line-args/images/docker-run-without-arguments.png" />
 
 - Running the docker run command with the arguments that you would like to pass on to the Java program within the container.
 - Note: When using the multiplication operator, make sure to surround it with quotes as shown below:
@@ -86,6 +87,7 @@ docker container run commandline-args-calculator - 20 5
 docker container run commandline-args-calculator "*" 5 10
 docker container run commandline-args-calculator / 10 5
 ```
+<img width="1400" alt="docker-run-with-arguments" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-java-command-line-args/images/docker-run-with-arguments.png" />
 
 ## The Dockerfile Revealed: It's Simpler than it Seems!
 

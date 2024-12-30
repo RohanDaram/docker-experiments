@@ -1,0 +1,13 @@
+# Eclipse IDE
+.classpath
+.project
+.settings/
+bin/
+
+# Maven build output
+/target/
+target/
+
+.DS_Store
+
+/**/*.class

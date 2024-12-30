@@ -74,7 +74,7 @@ Use the docker build command with the ```-t``` (short for ```--tag```) flag to a
 ```bash
 docker build -t docker-java-container .
 ```
-
+<img width="1048" alt="building-image-with-tag-option" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-java-container/images/building-image-with-tag-option.png" />
 
 Note: Don’t leave out the trailing dot at the end of the build command — it's the little thing that makes everything work!
 
@@ -84,16 +84,33 @@ Binding a source folder on the host to a folder in the container using Docker bi
 ```bash
 docker container run -v ./src/main/java:/app-source -it docker-java-container
 ```
+<img width="1264" alt="bind-mount-with-v-option" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-java-container/images/bind-mount-with-v-option.png" />
+
 - Method 2: Mapping src/main/java on the host to /app-source in the container using ```--mount```, ```src```, and ```dst``` flags.
 ```bash
 docker container run --mount type=bind,src=./src/main/java,dst=/app-source -it docker-java-container
 ```
+<img width="1430" alt="bind-mount-with-mount-option" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-java-container/images/bind-mount-with-mount-option.png" />
+
 - Method 3:  Mapping src/main/java on the host to /app-source in the container using ```--mount```, ```source```, and ```target``` flags.
 ```bash
 docker container run --mount type=bind,source=./src/main/java,target=/app-source -it docker-java-container
 ```
+<img width="1432" alt="bind-mount-with-mount-option-v2" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-java-container/images/bind-mount-with-mount-option-v2.png" />
+
 
 Assuming everything goes smoothly (with a bit of Docker magic), you should be able to run Java classes on the host machine using the JDK within the container:
+
+Compiling the Java Classes
+
+<img width="593" alt="compiling-class-files" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-java-container/images/compiling-class-files.png" />
+
+Running a few of the Java Class Files
+
+<img width="584" alt="running-java-hangman" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-java-container/images/running-java-hangman.png" />
+
+<img width="548" alt="running-java-number-pattern" src="https://github.com/RohanDaram/docker-experiments/blob/main/docker-java-container/images/running-java-number-pattern.png" />
+
 
 
 ## The Dockerfile Revealed: Don’t Worry, It’s Not That Scary
